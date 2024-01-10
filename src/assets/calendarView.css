@@ -1,0 +1,40 @@
+:root {
+    --input-year-width: 80px;
+    --input-year-font-size: 1.1em;
+    --calendar-header-font-size: 2em;
+    --calendar-header-gap: 10px;
+    --count-column: 4;
+    --count-row: 3;
+    --font-size-month-name: 1.5em;
+    --month-name-margin: 0 0 10px 0;
+    --font-size-day-number: 1.1em;
+}
+
+@media (max-width: 992px) {
+    :root {
+        --count-column: 3;
+        --count-row: 4;
+    }
+}
+
+@media (max-width: 672px) {
+    :root {
+        --input-year-width: 60px;
+        --calendar-header-font-size: 1.2em;
+        --calendar-header-gap: 5px;
+        --font-size-month-name: 1.1em;
+        --font-size-day-number: 0.8em;
+    }
+}
+
+@media (max-width: 576px) {
+    :root {
+        --input-year-width: 45px;
+        --input-year-font-size: 1em;
+        --calendar-header-font-size: 1em;
+        --calendar-header-gap: 1px;
+        --font-size-month-name: 0.8em;
+        --month-name-margin: 0 0 5px 0;
+        --font-size-day-number: 0.5em;
+    }
+}

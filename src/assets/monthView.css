@@ -1,0 +1,72 @@
+:root {
+    --calendar-header-font-size: 2em;
+    --calendar-header-gap: 10px;
+    --font-size-month-name: 1.5em;
+    --month-name-margin: 0 0 10px 0;
+    --input-month-width: 180px;
+    --input-month-font-size: 1.1em;
+    --month-day-width: 140px;
+    --month-day-height: 120px;
+    --month-day-font-size: 20px;
+    --day-name-font-size: 55px;
+    --day-name-hover-font-size: 25px;
+    --visible-large-weekday: flex;
+    --visible-small-weekday: none;
+    --event-count-font-size: 16px;
+    --font-size-day-number: 1.1em;
+}
+
+@media (max-width: 992px) {
+    :root {
+        --month-day-width: 105px;
+        --month-day-height: 85px;
+        --visible-large-weekday: none;
+        --visible-small-weekday: flex;
+        --day-name-font-size: 35px;
+        --event-count-font-size: 11px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --month-day-width: 90px;
+        --month-day-height: 70px;
+        --event-count-font-size: 10px;
+    }
+}
+
+@media (max-width: 672px) {
+    :root {
+        --calendar-header-font-size: 1.2em;
+        --calendar-header-gap: 5px;
+        --font-size-month-name: 1.1em;
+        --month-day-width: 80px;
+        --month-day-height: 60px;
+        --input-month-width: 120px;
+        --day-name-font-size: 25px;
+        --event-count-font-size: 8px;
+        --font-size-day-number: 0.8em;
+    }
+}
+
+@media (max-width: 576px) {
+    :root {
+        --calendar-header-font-size: 1em;
+        --calendar-header-gap: 1px;
+        --font-size-month-name: 0.8em;
+        --month-name-margin: 0 0 5px 0;
+        --month-day-width: 60px;
+        --month-day-height: 40px;
+        --day-name-font-size: 20px;
+        --input-month-width: 100px;
+        --input-month-font-size: 1em;
+        --font-size-day-number: 0.5em;
+    }
+}
+
+@media (max-width: 425px) {
+    :root {
+        --month-day-width: 45px;
+        --month-day-height: 30px;
+    }
+}

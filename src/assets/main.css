@@ -1,0 +1,63 @@
+:root {
+    --summer-color: #F08080;
+    --winter-color: #1E90FF;
+    --autumn-color: #FF8C00;
+    --spring-color: #4caf50;
+}
+
+:root {
+    --scrollbar-color: #c1c1c1;
+    --scrollbar-background-color: #f1f1f1;
+    --header-background-color: #f8f9fa;
+    --header-color: #000;
+    --page-background-color: #fff;
+    --page-color: #000;
+    --input-color: #333;
+    --input-default-color-border: #ccc;
+    --error-color: #FF0000;
+    --weekend-color: #FF0000;
+    --holiday-color: #FF0000;
+    --select-day-color: #FF00FF;
+    --other-day-color: #808080;
+    --other-day-background-color: #D3D3D3;
+    --current-day-background-color: #ffd6dd;
+}
+
+.summer {
+    --season-text-color: #F08080;
+    --season-backgroung-color: #fbe1e1;
+}
+
+.winter {
+    --season-text-color: #1E90FF;
+    --season-backgroung-color: #aad5ff;
+}
+
+.autumn {
+    --season-text-color: #FF8C00;
+    --season-backgroung-color: #ffe0bb;
+}
+
+.spring {
+    --season-text-color: #4caf50;
+    --season-backgroung-color: #90EE90;
+}
+
+::selection {
+    background: var(--season-text-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --scrollbar-color: #686868;
+        --scrollbar-background-color: #424242;
+        --header-background-color: #19192c;
+        --header-color: #9ea7b3;
+        --page-background-color: #1c1c2a;
+        --page-color: #9ea7b3;
+        --input-color: #9ea7b3;
+        --other-day-color: #d3d3d367;
+        --other-day-background-color: #80808048;
+        --current-day-background-color: #744242;
+    }
+}
